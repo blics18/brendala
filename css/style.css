@@ -1,0 +1,168 @@
+body{
+	height: 100%;
+	text-align: center;
+	min-height: 100%;
+	background: linear-gradient(to right, #77C9D5, #57BC90);
+	background: -webkit-linear-gradient(left, #77C9D5, #57BC90); /* For Safari 5.1 to 6.0 */
+  	background: -o-linear-gradient(right, #77C9D5, #57BC90); /* For Opera 11.1 to 12.0 */
+  	background: -moz-linear-gradient(right, #77C9D5, #57BC90); /* For Firefox 3.6 to 15 */
+}
+
+/*.container{
+	background-color: #ffffff;
+	opacity: 0.6;
+	filter: alpha(opacity=60);
+}*/
+
+hr {
+    margin:25px 0px;
+    border-top: 1px solid #eee;
+}
+
+ul{
+	padding-left: 0px
+}
+
+a{
+	text-decoration: none;
+	color: #388c9f;
+}
+
+a:hover{
+	text-decoration: none;
+	padding-bottom: 3px;
+	border-bottom: 1px solid white;
+}
+
+a:visited{
+	color: #388c9f;
+}
+
+h2{
+	margin:20px 0px;
+}
+/*-----Header------*/
+header{
+	margin-top: 20px;
+}
+
+/*------Naviagtion bar-------*/
+nav ul{
+	margin-top: 20px;
+}
+
+nav ul li{ 
+	display: block;
+	padding: 10px 20px;
+	list-style-type: none;
+}
+
+nav ul li a{
+	font-size: 16px;
+}
+
+
+/*------Intro-------*/
+#intro{
+	background: url(../images/square_me.jpg);
+	background-size: auto 100%;                     
+    background-repeat:   no-repeat;
+    background-position: center center;  
+	height: 500px;
+	position: relative;
+}
+
+#intro h2{
+	position:absolute;
+    left:0px;
+    right:0px;
+    text-align:center;
+    bottom: 0px;
+    display:block;
+    margin:auto;
+    color: white;
+}
+
+/*----About----*/
+#about .row {
+    display: table;
+    width: 100%;
+}
+
+#about li{
+	text-align: left;
+}
+#about img{
+	width: 200px;
+	height: 200px;
+}
+#about .col-lg-4{
+	width: 100%;
+	float: left;
+	margin:10px;
+}
+
+/*----Skills----*/
+
+#skills ul{
+	margin: 20px;
+}
+#skills ul li{ 
+	display: inline-block;
+	list-style-type: none;
+	padding: 10px;
+	margin: 10px;
+	border: 2px solid #187f72;
+}
+
+
+/*----Projects-----*/
+#projects p{
+	text-align: left;
+}
+#projects ul{
+	text-align: left;
+}
+#projects ul li{
+	list-style-type: none;
+	display: inline-block;
+	padding: 10px;
+	border: 2px solid #187f72;
+	margin: 5px;
+}
+#projects h3{
+	margin: 0px;
+}
+
+/*----Footer-----*/
+footer {
+    clear: both;
+    position: relative;
+    z-index: 10;
+    height: 3em;
+    /*margin-top: -3em;*/
+}
+
+footer ul li{
+	list-style-type: none;
+	display: inline;
+}
+
+
+/*----Media Queries-----*/
+@media only screen and (min-width:812px){
+	nav ul li{
+	display: inline;
+	padding: 20px;
+	}
+
+	#about .col-lg-4{
+		width: 33%;
+		margin:0px;
+	}
+
+
+
+	
+	
+}
