@@ -6,13 +6,9 @@ body{
 	background: -webkit-linear-gradient(left, #77C9D5, #57BC90); /* For Safari 5.1 to 6.0 */
   	background: -o-linear-gradient(right, #77C9D5, #57BC90); /* For Opera 11.1 to 12.0 */
   	background: -moz-linear-gradient(right, #77C9D5, #57BC90); /* For Firefox 3.6 to 15 */
+  	margin: 0px;
 }
 
-/*.container{
-	background-color: #ffffff;
-	opacity: 0.6;
-	filter: alpha(opacity=60);
-}*/
 
 hr {
     margin:25px 0px;
@@ -28,11 +24,6 @@ a{
 	color: #388c9f;
 }
 
-a:hover{
-	text-decoration: none;
-	padding-bottom: 3px;
-	border-bottom: 1px solid white;
-}
 
 a:visited{
 	color: #388c9f;
@@ -41,68 +32,74 @@ a:visited{
 h2{
 	margin:20px 0px;
 }
-/*-----Header------*/
-header{
-	margin-top: 20px;
+
+/*-----------------Naviagtion bar------------------*/
+.topNav{
+	background: rgba(255,255,255,0.6);
+	padding: 20px 20px;
+	overflow: hidden;
 }
 
-/*------Naviagtion bar-------*/
-nav ul{
-	margin-top: 20px;
+.topNav #logo{
+	display: none;
 }
 
-nav ul li{ 
-	display: block;
-	padding: 10px 20px;
-	list-style-type: none;
-}
-
-nav ul li a{
+.topNav a{ 
 	font-size: 16px;
 }
 
+.topNav a:hover{
+	text-decoration: none;
+	padding-bottom: 3px;
+	border-bottom: 1px solid white;
+}
 
-/*------Intro-------*/
+.topNav ul li{
+	display: inline-block;
+	padding: 0px 20px;
+	list-style-type: none;
+}
+
+.topNav a.icon{
+	display: none;
+}
+
+
+/*-----------------Intro------------------*/
 #intro{
-	background: url(../images/square_me.jpg);
-	background-size: auto 100%;                     
-    background-repeat:   no-repeat;
-    background-position: center center;  
-	height: 500px;
+	padding: 30px 0px;
+	height: 90vh;
 	position: relative;
 }
 
-#intro h2{
-	position:absolute;
-    left:0px;
-    right:0px;
-    text-align:center;
-    bottom: 0px;
-    display:block;
-    margin:auto;
-    color: white;
+#intro img{
+	margin-top: 5.5em;
+	display: inline-block;
+    vertical-align: middle;
+	border-radius: 50%;
+	height: 50vh;
+	
 }
 
-/*----About----*/
-#about .row {
-    display: table;
-    width: 100%;
-}
 
+/*-----------------About------------------*/
 #about li{
 	text-align: left;
 }
+
 #about img{
 	width: 200px;
 	height: 200px;
-}
-#about .col-lg-4{
-	width: 100%;
-	float: left;
-	margin:10px;
+	border-radius: 50%;
 }
 
-/*----Skills----*/
+#about .col-lg-4{
+	width: 33%;
+	margin:0px;
+}
+
+
+/*-----------------Skills------------------*/
 
 #skills ul{
 	margin: 20px;
@@ -116,7 +113,7 @@ nav ul li a{
 }
 
 
-/*----Projects-----*/
+/*-----------------Projects------------------*/
 #projects p{
 	text-align: left;
 }
@@ -134,35 +131,143 @@ nav ul li a{
 	margin: 0px;
 }
 
-/*----Footer-----*/
+/*-----------------Resume------------------*/
+#resume a{
+	font-size: 2.5em;
+}
+
+/*-----------------Contact------------------*/
+input[type=text]{
+	color: white;
+	margin: 10px;
+	border: none;
+	border-bottom: 1px solid #187f72;
+	background-color: transparent;
+}
+
+input[type=text], textarea{
+	width: 25%;
+}
+
+textarea{
+	margin: 10px;
+	border: none;
+	border-bottom: 1px solid #187f72;
+	background-color: transparent;
+	color: white;
+	resize: none;
+}
+textarea:focus {
+	outline: none;
+    border-bottom: 3px solid white;
+}
+
+input[type=text]:focus {
+	outline: none;
+    border-bottom: 3px solid white;
+}
+
+
+input[type=submit]{
+	background-color: transparent;
+	margin-top: 10px;
+	padding: 10px 30px;
+	border: 1px solid #187f72;
+	color: #187f72;
+}
+
+input[type=submit]:hover{
+	color: white;
+	border: 1px solid white;
+	background: #187f72;
+}
+
+/*-----------------Footer------------------*/
 footer {
     clear: both;
     position: relative;
     z-index: 10;
     height: 3em;
-    /*margin-top: -3em;*/
 }
 
 footer ul li{
 	list-style-type: none;
 	display: inline;
+	padding: 20px;
 }
 
 
-/*----Media Queries-----*/
-@media only screen and (min-width:812px){
-	nav ul li{
-	display: inline;
-	padding: 20px;
+/*-----------------Media Queries------------------*/
+@media only screen and (max-width: 1200px){
+	#about .col-lg-4{
+		width: 100%;
+		float: left;
+		margin:10px;
+	}
+}	
+
+@media only screen and (max-width: 812px){
+
+	.topNav a{
+		display: none;
+	}
+
+	.topNav #logo h1{
+		margin: 0px;
+	}
+	.topNav #logo{
+		position: absolute;
+		display: block;
+		right: 0;
+		left: 0;
+		top: 0;
+		margin: 20px 20px;
+		
+	}
+	.topNav a.icon {
+	    float: right;
+	    display: block;
+	    position: absolute;
+	    right: 0;
+	    top: 0;
+	    border-bottom: none;
+	    font-size: 2.5em;
+	    margin: 20px 16px;
+	}
+
+	.topNav.responsive {
+		position: relative;
+	}
+
+	.topNav.responsive .icon {
+	    position: absolute;
+	    right: 0;
+	    top: 0;
+	}
+
+	.topNav.responsive ul li a{
+	    display: block;
+	}
+
+	.topNav.responsive ul li{
+	    float: none;
+	    display: block;
+	    padding: 10px 0px;
+	    transition: all .25s ease;
+	}
+
+	#about .row {
+	    display: table;
+	    width: 100%;
 	}
 
 	#about .col-lg-4{
-		width: 33%;
-		margin:0px;
+		width: 100%;
+		float: left;
+		margin:10px;
 	}
 
-
-
-	
-	
+	input[type=text], textarea{
+		width: 70%;
+	}
 }

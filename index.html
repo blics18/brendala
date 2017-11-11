@@ -7,28 +7,31 @@
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	<script src="./js/script.js"></script>
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 
 <body>
-	<header>
-		<h1>BL</h1>
-	</header>
-	<nav>
+	<nav class="topNav" id="myTopNav">
 		<ul>
+			<li><span id="logo"><h1>BL</h1></span></li>
 			<li><a href="#about">About</a></li>
 			<li><a href="#skills">Skills</a></li>
 			<li><a href="#projects">Projects</a></li>
 			<li><a href="#resume">Resume</a></li>
 			<li><a href="#contact">Contact</a></li>
+			<li><a href="javascript:void(0);" class="icon"><span class="glyphicon glyphicon-menu-hamburger"></span></a></li>
 		</ul>
 	</nav>
-
-	<div id="intro">
-		<h2>Hi, I'm Brenda!</h2>
-	</div>
-
 	<div class="container">
+		<div id="intro">
+			<img src="./images/square_me.jpg">
+			<h2>Hi, I'm Brenda!</h2>
+			<h3>Software Developer</h3>
+		</div>
+
+		<hr>
+	
 		<section id="about">
 			<h2>About</h2>
 			<div class="row">
@@ -36,15 +39,15 @@
 					<img src="./images/nao_robot.jpg">
 			    	<h3>Experience</h3>
 			    	<ul>
-			    		<li>NAO robot</li>
-			    		<li>Schoolr</li>
+			    		<li><strong>Girls Inc</strong> - I taught middle school and high school girls how to program NAO robots using Choreographe. I also taught high school girls block coding using Made w/ Code, Thunkable, Code.org.</li>
+			    		<li><strong>Schoolr</strong> - </li>
 			    	</ul>
 			    </div>
 			    <div class="col-lg-4">
 			    	<h3>Who Am I?</h3>
 			    	<ul>
 			    		<li>I am a 4th year Computer Science major at the University of California, Irvine. </li>
-			    		<li>I am currently seeking for a full-time software engineering position</li>
+			    		<li>I am currently seeking for a full-time software developer position</li>
 			    	</ul>
 			    	<img src="./images/uci_logo.png">
 			    </div>
@@ -52,7 +55,7 @@
 			    	<img src="./images/code_icon.png">
 			    	<h3>Interests</h3>
 			    	<ul>
-			    		<li>I am interested in constantly learning new programming languages.</li>
+			    		<li>I am interested in constantly learning new programming languages. I like front-end development but I am also open to back-end development. </li>
 			    		<li>I love swimming. I used to be on the swim team back in high school.</li>
 			    		<li>I also love to play basketball and also used to be on the basketball team. When I have time, especially in the summer, I go outside to shoot some hoops in my backyard.</li>
 			    	</ul>
@@ -98,9 +101,12 @@
 				</div>
 				<div class="col-lg-6">
 					<h3>Fabflix</h3>
+					<em>March 2017 - June 2017</em>
 					<p>I worked with 2 others to create an eCommerce website for movies and a basic Android application. Users who visit the website are able to search and shop for movies.</p>
 					<ul>
 						<li>Java</li>
+						<li>HTML</li>
+						<li>CSS</li>
 						<li>Tomcat</li>
 						<li>MySQL</li>
 						<li>Amazon Web Services</li>
@@ -111,6 +117,13 @@
 			<div class="row">
 				<div class="col-lg-6">
 					<h3>Search Engine</h3>
+					<em>January 2017 - March 2017</em>
+					<p>I created a search engine for the ICS domain with 1 other. The end project consists of an interface that includes a text box for users to enter queries and it returns relevant results. </p>
+					<ul>
+						<li>Python</li>
+						<li>Flask</li>
+						<li>ElasticSearch</li>
+					</ul> 
 				</div>
 				<div class="col-lg-6">
 					<img src="#">
@@ -122,6 +135,7 @@
 
 		<section id="resume">
 			<h2>Resume</h2>
+			<a href="BrendaLaResume.pdf" target="_blank"><span class="glyphicon glyphicon-download-alt"></span></a>
 
 		</section>
 
@@ -130,7 +144,17 @@
 		<section id="contact">
 			<h2>Stay In Touch</h2>
 			<h4>Feel free to contact me anytime</h4>
-
+			<form action="mailto:brenda_la2010@yahoo.com" method="post" enctype="text/plain">
+				<input type="text" name="name" placeholder="Name">
+				<br>
+				<input type="text" name="email" placeholder="Email">
+				<br>
+				<input type="text" name="subject" placeholder="Subject">
+				<br>
+				<textarea rows="3" name="message" placeholder="Message"></textarea>
+				<br>
+				<input type="submit" value="Send">
+			</form>
 		</section>
 
 		<hr>
@@ -138,8 +162,8 @@
 
 	<footer>
 		<ul>
-			<li><a href="#">LinkedIn</a></li>
-			<li><a href="#">Github</a></li>
+			<li><a href="https://www.linkedin.com/in/brenda-la-a53913126" target="_blank"><img src="./images/linkedin.png"></a></li>
+			<li><a href="https://github.com/blics18" target="_blank"><img src="./images/github.png"></a></li>
 		</ul>
 		<p>&copy; Brenda La 2017</p>
 	</footer>
