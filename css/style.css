@@ -10,7 +10,7 @@ body{
 }
 
 
-hr {
+hr{
     margin:25px 0px;
     border-top: 1px solid #eee;
 }
@@ -29,9 +29,23 @@ a:visited{
 	color: #388c9f;
 }
 
-h2{
+h2{ /*section headers*/
 	margin:20px 0px;
+	font-family: 'Merriweather', serif;
+	color: #015249;
+
 }
+
+h3{ /*section subheaders*/
+	font-family: 'Sorts Mill Goudy', serif;
+	color: #187f72;
+
+}
+p{ /*section paragraphs*/
+	font-family: 'Sorts Mill Goudy', serif;
+	font-size: 1.2em;
+}
+
 
 /*-----------------Naviagtion bar------------------*/
 .topNav{
@@ -40,24 +54,19 @@ h2{
 	overflow: hidden;
 }
 
-.topNav #logo{
-	display: none;
-}
-
 .topNav a{ 
 	font-size: 16px;
-}
-
-.topNav a:hover{
-	text-decoration: none;
-	padding-bottom: 3px;
-	border-bottom: 1px solid white;
+	font-family: 'Merriweather', serif;
 }
 
 .topNav ul li{
 	display: inline-block;
 	padding: 0px 20px;
 	list-style-type: none;
+}
+
+.topNav #logo{
+	display: none;
 }
 
 .topNav a.icon{
@@ -78,7 +87,6 @@ h2{
     vertical-align: middle;
 	border-radius: 50%;
 	height: 50vh;
-	
 }
 
 
@@ -93,11 +101,10 @@ h2{
 	border-radius: 50%;
 }
 
-#about .col-lg-4{
+/*#about .col-lg-4{
 	width: 33%;
 	margin:0px;
-}
-
+}*/
 
 /*-----------------Skills------------------*/
 
@@ -109,26 +116,35 @@ h2{
 	list-style-type: none;
 	padding: 10px;
 	margin: 10px;
-	border: 2px solid #187f72;
+	border: 1px solid #187f72;
 }
 
 
 /*-----------------Projects------------------*/
-#projects p{
+#projects .row{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#projects p, #projects ul{
 	text-align: left;
 }
-#projects ul{
-	text-align: left;
-}
+
 #projects ul li{
 	list-style-type: none;
 	display: inline-block;
 	padding: 10px;
-	border: 2px solid #187f72;
+	border: 1px solid #187f72;
 	margin: 5px;
 }
+
 #projects h3{
 	margin: 0px;
+}
+
+#projects img{
+	max-width: 100%;
+	max-height: 100%;
 }
 
 /*-----------------Resume------------------*/
@@ -157,6 +173,7 @@ textarea{
 	color: white;
 	resize: none;
 }
+
 textarea:focus {
 	outline: none;
     border-bottom: 3px solid white;
@@ -167,19 +184,12 @@ input[type=text]:focus {
     border-bottom: 3px solid white;
 }
 
-
 input[type=submit]{
 	background-color: transparent;
 	margin-top: 10px;
 	padding: 10px 30px;
 	border: 1px solid #187f72;
 	color: #187f72;
-}
-
-input[type=submit]:hover{
-	color: white;
-	border: 1px solid white;
-	background: #187f72;
 }
 
 /*-----------------Footer------------------*/
@@ -198,15 +208,52 @@ footer ul li{
 
 
 /*-----------------Media Queries------------------*/
-@media only screen and (max-width: 1200px){
-	#about .col-lg-4{
+/*Desktop*/
+@media screen and (min-width: 1024px){
+  .topNav a:hover{
+		text-decoration: none;
+		padding-bottom: 3px;
+		border-bottom: 1px solid white;
+	}
+
+	input[type=submit]:hover{
+		color: white;
+		border: 1px solid white;
+		background: #187f72;
+	}
+}
+
+/* Tablet Landscape or Portrait */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px){
+  	#about .col-lg-4{
 		width: 100%;
 		float: left;
 		margin:10px;
 	}
-}	
 
-@media only screen and (max-width: 812px){
+	#fabflix{
+		margin-bottom: 10px;
+	}
+}
+
+/*Tablet Portrait*/
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait){
+  	#intro img{
+  		height: 30vh;
+  		margin-top: 10.5em;
+  	}
+	
+}
+
+ /*Mobile Landscape*/
+@media only screen and (max-width: 812px) and (orientation: landscape){
+	#intro img{
+		margin-top: 1.25em;
+	}
+}
+
+/*Mobile Portrait*/
+@media only screen and (max-width: 812px){ 
 
 	.topNav a{
 		display: none;
@@ -247,6 +294,7 @@ footer ul li{
 
 	.topNav.responsive ul li a{
 	    display: block;
+	    border-bottom: none;
 	}
 
 	.topNav.responsive ul li{
@@ -267,6 +315,9 @@ footer ul li{
 		margin:10px;
 	}
 
+	#fabflix{
+		margin-bottom: 10px;
+	}
 	input[type=text], textarea{
 		width: 70%;
 	}

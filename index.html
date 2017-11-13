@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<title>Brenda La</title>
+	<meta name="author" content="Brenda La">
 	<meta charset="utf-8">
   	<meta name="viewport" content="width=device-width, initial-scale=1">
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -9,6 +10,7 @@
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   	<script src="./js/script.js"></script>
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather|Sorts+Mill+Goudy" rel="stylesheet">
 </head>
 
 <body>
@@ -39,15 +41,16 @@
 					<img src="./images/nao_robot.jpg">
 			    	<h3>Experience</h3>
 			    	<ul>
-			    		<li><strong>Girls Inc</strong> - I taught middle school and high school girls how to program NAO robots using Choreographe. I also taught high school girls block coding using Made w/ Code, Thunkable, Code.org.</li>
-			    		<li><strong>Schoolr</strong> - </li>
+			    		<li><p><strong>SendGrid</strong> - I am creating a system in a team of five that will use an implemented bloom filter which will help SendGrid with their email supressions. </p></li>
+			    		<li><p><strong>Schoolr</strong> - I work on the front-end for Schoolr, which is a startup tutoring application. We use trello to follow the agile methodology.</p></li>
+			    		<li><p><strong>Girls Inc</strong> - I taught middle school and high school girls how to program NAO robots using Choreographe. I also taught high school girls block coding using Made w/ Code, Thunkable, Code.org.</p></li>
 			    	</ul>
 			    </div>
 			    <div class="col-lg-4">
 			    	<h3>Who Am I?</h3>
 			    	<ul>
-			    		<li>I am a 4th year Computer Science major at the University of California, Irvine. </li>
-			    		<li>I am currently seeking for a full-time software developer position</li>
+			    		<li><p>My name is Brenda La. I am a 4th year Computer Science major at the University of California, Irvine. </p></li>
+			    		<li><p>I am currently seeking for a full-time software developer position.</p></li>
 			    	</ul>
 			    	<img src="./images/uci_logo.png">
 			    </div>
@@ -55,9 +58,9 @@
 			    	<img src="./images/code_icon.png">
 			    	<h3>Interests</h3>
 			    	<ul>
-			    		<li>I am interested in constantly learning new programming languages. I like front-end development but I am also open to back-end development. </li>
-			    		<li>I love swimming. I used to be on the swim team back in high school.</li>
-			    		<li>I also love to play basketball and also used to be on the basketball team. When I have time, especially in the summer, I go outside to shoot some hoops in my backyard.</li>
+			    		<li><p>I am interested in software development because I want to work with other professionals to write programs and create software that will be useful to people. Writing programs using different programming languages and constantly learning new programming languages has always been interesting.</p></li>
+			    		<li><p>I also like front-end development because when creating an application, I do not only want it to work, but I also want to make sure people are able to enjoy the application through their experience and interface.</p></li>
+			    		<li><p>Besides programming, I enjoy swimming and playing basketball. I used to be on the swim team and basektball team back in high school.</p></li>
 			    	</ul>
 			    </div>
 			</div>
@@ -77,7 +80,7 @@
 			</ul>
 		</section>
 
-		<hr>
+		<hr class="divider">
 
 		<section id="projects">
 			<h2>Projects</h2>
@@ -85,24 +88,24 @@
 				<div class="col-lg-6">
 					<h3>SendGrid Bloomfilter</h3>
 					<em>September 2017 - Present</em>
-					<p>I am collaborating with 4 others to build a system that uses an implemented bloom filter for email suppression for SendGrid, an email marketing company. We have weekly sprints and follow the agile methodology.</p>
+					<p>I am collaborating with 4 others to build a system that uses an implemented bloom filter for email suppression for SendGrid, an email marketing company. We have weekly sprints and follow the agile methodology. The implemented bloom filter is in Go and we are programming in Go and using MySQL as the database. We are going to make the bloom filter distributed and we currently have a sharded database for large amounts of data.</p>
 					<ul>
 						<li>Go</li>
 						<li>MySQL</li>
 					</ul>
 				</div>
 				<div class="col-lg-6">
-					<img src="#">
+					<img src="./images/sendgrid.png" id="sendgrid">
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-lg-6">
-					<img src="#">
+					<img src="./images/home.png" id="fabflix">
 				</div>
 				<div class="col-lg-6">
 					<h3>Fabflix</h3>
 					<em>March 2017 - June 2017</em>
-					<p>I worked with 2 others to create an eCommerce website for movies and a basic Android application. Users who visit the website are able to search and shop for movies.</p>
+					<p>I worked with 2 others to create an eCommerce website for movies and a basic Android application. Users who visit the website are able to search and shop for movies. HTML and CSS were written in Java Server Pages to create the interfaces and the Java Database Connectivity Programs were written to connect the queries from the interfaces to MySQL.  We developed locally and then deployed it onto AWS.</p>
 					<ul>
 						<li>Java</li>
 						<li>HTML</li>
@@ -110,6 +113,7 @@
 						<li>Tomcat</li>
 						<li>MySQL</li>
 						<li>Amazon Web Services</li>
+						<li>Android Studio</li>
 						<li>Java Server Pages</li>
 						<li>Java Database Connectivity Program</li>
 				</div>
@@ -118,7 +122,7 @@
 				<div class="col-lg-6">
 					<h3>Search Engine</h3>
 					<em>January 2017 - March 2017</em>
-					<p>I created a search engine for the ICS domain with 1 other. The end project consists of an interface that includes a text box for users to enter queries and it returns relevant results. </p>
+					<p>I created a search engine for the ICS domain with 1 other. The end project consists of an interface that includes a text box for users to enter queries and it returns a list of relevant results, showing the URL and a snippet of what is on the site. We worked with Elasticsearch to build an index, given the websites, and we retrieved documents according to relevance score using RESTful APIs and JSON. Then we used Flask to develop the interface of the search engine.</p>
 					<ul>
 						<li>Python</li>
 						<li>Flask</li>
@@ -126,7 +130,7 @@
 					</ul> 
 				</div>
 				<div class="col-lg-6">
-					<img src="#">
+					<img src="./images/search_engine.png" id="search">
 				</div>
 			</div>
 		</section>
@@ -139,7 +143,7 @@
 
 		</section>
 
-		<hr>
+		<hr class="divider">
 
 		<section id="contact">
 			<h2>Stay In Touch</h2>
