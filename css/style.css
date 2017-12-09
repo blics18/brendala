@@ -46,6 +46,10 @@ p{ /*section paragraphs*/
 	font-size: 1.2em;
 }
 
+.shortLine{
+	width: 20%;
+	margin: auto;
+}
 
 /*-----------------Naviagtion bar------------------*/
 .topNav{
@@ -206,6 +210,57 @@ footer ul li{
 	padding: 20px;
 }
 
+/*############Portfolio.html################*/
+
+/*-----------------Research------------------*/
+#research .row{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#research p{
+	text-align: left;
+}
+
+
+#research h3{
+	margin: 0px;
+}
+
+#research img{
+	max-width: 100%;
+	max-height: 100%;
+}
+
+/*-----------------Testing------------------*/
+#testing .row{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#testing p{
+	text-align: left;
+}
+
+
+#testing h3{
+	margin: 0px;
+}
+
+#testing img{
+	max-width: 100%;
+	max-height: 100%;
+}
+
+/*-----------------Summary------------------*/
+#summary p{
+	text-align: left;
+}
+
+/*-----------------Incorporation------------------*/
+#incorporation p{
+	text-align: left;
+}
 
 /*-----------------Media Queries------------------*/
 /*Desktop*/
