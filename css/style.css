@@ -38,8 +38,8 @@ h2{ /*section headers*/
 
 h3{ /*section subheaders*/
 	font-family: 'Sorts Mill Goudy', serif;
-	color: #187f72;
-
+	/*color: #187f72;*/
+	color: #346858;
 }
 p{ /*section paragraphs*/
 	font-family: 'Sorts Mill Goudy', serif;
@@ -56,6 +56,10 @@ p{ /*section paragraphs*/
 	background: rgba(255,255,255,0.6);
 	padding: 20px 20px;
 	overflow: hidden;
+    position:fixed;
+    top:0;
+    width: 100%;
+    z-index:170;
 }
 
 .topNav a{ 
@@ -81,12 +85,12 @@ p{ /*section paragraphs*/
 /*-----------------Intro------------------*/
 #intro{
 	padding: 30px 0px;
-	height: 90vh;
+	height: 100vh;
 	position: relative;
 }
 
 #intro img{
-	margin-top: 5.5em;
+	margin-top: 10.5em;
 	display: inline-block;
     vertical-align: middle;
 	border-radius: 50%;
@@ -122,7 +126,6 @@ p{ /*section paragraphs*/
 	margin: 10px;
 	border: 1px solid #187f72;
 }
-
 
 /*-----------------Projects------------------*/
 #projects .row{
@@ -210,9 +213,12 @@ footer ul li{
 	padding: 20px;
 }
 
-/*############Portfolio.html################*/
+/*############Findings.html################*/
 
 /*-----------------Research------------------*/
+#research{
+	margin-top: 7.5em;
+}
 #research .row{
 	margin-top: 20px;
 	margin-bottom: 20px;
@@ -357,6 +363,10 @@ footer ul li{
 	    display: block;
 	    padding: 10px 0px;
 	    transition: all .25s ease;
+	}
+
+	#intro img{
+		margin-top: 7.25em;
 	}
 
 	#about .row {
