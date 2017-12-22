@@ -119,12 +119,25 @@ p{ /*section paragraphs*/
 #skills ul{
 	margin: 20px;
 }
+
 #skills ul li{ 
 	display: inline-block;
 	list-style-type: none;
 	padding: 10px;
 	margin: 10px;
 	border: 1px solid #187f72;
+}
+
+#skills #terminal{
+	color: white;
+	font-size: 60px;
+	width: 92px;
+	height: 93px;
+}
+
+#skills ul li i{
+	font-size: 7rem;
+	color: white;
 }
 
 /*-----------------Projects------------------*/
